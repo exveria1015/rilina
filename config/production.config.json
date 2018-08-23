@@ -1,0 +1,77 @@
+﻿{
+  "bot": {
+    "apiToken": "NDc4NTU4ODA0OTg5MTgxOTYy.DltKMQ.73N36BkB7eNZui8RpV-cnvX1028",
+    "allowedChannels": [
+      "リリナ","481201310784552983","481200451128393732","481418589421961217","481418636020547585"
+    ],
+    "commandShortcuts": [
+      { 
+        "shortcuts": ["ig", "ingame"],
+        "command": ["status", "ingame"],
+        "help": "Sets your matchmaking status to Lurking"
+      },
+      { 
+        "shortcuts": ["lf", "looking"],
+        "command": ["status", "looking"],
+        "help": "Sets your matchmaking status to Looking For Opponent"
+      },
+      { 
+        "shortcuts": ["lk", "lurk"], 
+        "command": ["status", "lurking"],
+        "help": "Sets your matchmaking status to Lurking"
+      },
+      { 
+        "shortcuts": ["dnd"], 
+        "command": ["status", "donotdisturb"],
+        "help": "Sets your matchmaking status to Do Not Disturb"
+      }
+    ],
+    "disabledCommands": ["status","big"
+      
+    ],
+    "embedColor": 3447003,
+    "prefix": "!"
+  },
+  "rankings": {
+    "glickoDefaults": {
+      "r": 1500,
+      "rd": 350.0,
+      "vol": 0.06
+    },
+    "matchFormats": [
+      { "code": "VOINDEX", "name": "とある魔術の電脳戦機" },
+	  { "code": "VOOT", "name": "オラトリオ・タングラム" },
+	  { "code": "VOOMG", "name": "オペレーション・ムーンゲート" }
+    ]
+  },
+  "statuses": [
+    {
+      "code": "IG",
+      "role": "In-Game",
+      "help": "In a game."
+    },
+    {
+      "code": "LF",
+      "role": "Looking For Opponent",
+      "help": "Actively seeking a match. This sends an announces to the channel.",
+      "alert": "<@Looking For Opponent> <@Lurking> \n\n{username} **is looking for an opponent!**"
+    },
+    {
+      "code": "LK",
+      "role": "Lurking",
+      "help": "Not actively seeking a match, but available. Gets match seeking announcements, but does not announce to the channel."
+    },
+    {
+      "code": "DND",
+      "role": "Do Not Disturb",
+      "help": "Not seeking a match. Does not recieve match seeking announcements."
+    }
+  ],
+  "mysql": {
+    "host": "localhost",
+    "port": 3306,
+    "user": "root",
+    "password": "fact2215",
+    "database": "vo_index"
+  }
+}

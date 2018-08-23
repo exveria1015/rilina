@@ -1,0 +1,36 @@
+import { buildEmbed } from '../../util/discord';
+import { updateRanking } from '../../mysql/rankings';
+import { getPlayerById } from '../../mysql/players';
+
+const name = 'rating';
+const optionParser = /^$/;
+const shortHelp = '!rating - 現在のあなたのレートを表示させます';
+const help = `
+使い方: \`!rating\`
+`;
+const allowDirectMessage = true;
+const allowChannelMessage = true;
+
+const updateRanking = ({
+  discordId,
+  format,
+  r,
+  rd,
+  vol
+ 
+ 
+ 
+  .catch(console.error);
+  
+export default {
+  name,
+  optionParser,
+  shortHelp,
+  help,
+  allowDirectMessage,
+  allowChannelMessage,
+  run
+};
+ 
+
+
